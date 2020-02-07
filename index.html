@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--	<link rel="Shortcut Icon" href="/assets/image/favicon.ico" type="image/x-icon">-->
+	<link rel="stylesheet" href="index.css">
+	<title>20200202</title>
+</head>
+<body>
+<div class="wrapper">
+
+</div>
+<script>
+
+  const str = `
+佳佳：
+\t最后一次这么称呼你，我最爱的人。
+\t这应该是最后一次为你写文字了。
+\t一直以来我坚信自己是一个不会妥协的人。
+\t太过执拗，让我遍体鳞伤也不为所动。
+\t像你初见我所说的，在一起是因为坚信爱情。
+\t
+如今，我将放下所有的坚持，
+去做一个平凡的人
+画画、英语、代码都与我无关
+不再去做某种我并不是的人
+
+说出这些
+忽然觉得前所未有的轻松
+一直劝你放下负担
+原来一直在负重前行的是我
+你说希望哪怕见面也能坦然面对
+我想  从现在起，应该就是了
+
+一直以来想用自己毕生所学
+为你写一个完美页面
+只是不曾想
+这个决定来临的如此突然
+让所有的计划都不再是计划
+
+当一个碌碌无为的人
+或许也没那么可怕
+就像母亲所说的
+我一直在选择我爱的
+而放弃那些爱我的
+同时也是让自己最劳累的
+
+之前不理解她为何要这样
+让我放弃自己所爱
+去过一种看似煎熬的生活
+现在一切都解释的通了
+她们一直在用她们所能理解的
+去为自己的孩子做着
+她们的世界里能理解的生活
+
+让自己去尝试
+一个“合适”的生活
+或许也是一个不错的选择
+从此生活过得斤斤计较细细碎碎
+充满烦恼与静谧
+
+你也要过好自己的生活
+
+\t\t\t\t\t哥哥
+\t\t\t\t\t2020/02/02
+`;
+  const Ddiv = document.getElementsByClassName('wrapper')[0];
+
+  const arr = str.split('\n');
+  for (let i = 0; i < arr.length; i++) {
+    const temp = document.createElement('p');
+    if(arr[i] === ''){
+      arr[i] = document.createElement('br');
+    }
+    temp.append(arr[i]);
+    Ddiv.append(temp);
+  }
+</script>
+</body>
+</html>
